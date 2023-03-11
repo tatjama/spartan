@@ -57,7 +57,7 @@ const SearchPage = () => {
 
     return(
         <SearchPageStyles>
-            <nav><h2>OMDb API</h2> <Button urlPath='/' text='to Home'/> </nav>            
+            <nav><h2>OMDb API</h2> <Button handleOnClick={() => navigate('/', {replace: true})} text='to Home'/> </nav>            
             <header>
                 <SearchBar setQuery = {setQuery} />
                 <div className="selectContainer">
