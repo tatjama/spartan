@@ -61,3 +61,21 @@ cloneGit.sh
 Displaying cloneGit.sh.
 `
 /*=====  End of Bash / Git   ======*/
+
+
+/*=============================================
+=            JavaScript algorithm            =
+=============================================*/
+
+//js
+export const ARR = ["x:1", "y:2", "x:3", "a:15", "b:25", "b:3"];
+
+
+/*=====  End of JavaScript algorithm  ======*/
+
+
+
+
+
+
+
