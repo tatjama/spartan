@@ -3,11 +3,9 @@ import styled from 'styled-components';
 
 export const BashStyles = styled.section`
   
-  p, ol > li, pre {
+  ol > li, pre {
     line-height: 1rem;
     font-size: 1rem;
-  }
-  ol > li {
     margin: 10px 20px;
   }
   pre {
@@ -15,6 +13,8 @@ export const BashStyles = styled.section`
     padding: 20px;
     background-color: ivory;
     width: 600px;
+    line-height: 1rem;
+    font-size: 1rem;    
   }
   .buttons {
     padding: 20px 0;
@@ -26,11 +26,9 @@ export const BashStyles = styled.section`
   }
 
   @media screen and (max-width: 767px) {
-    p, ol > li{
+    ol > li{
       line-height: 0.77rem;
       font-size: 0.77rem;
-    }
-    ol > li {
       margin: 0;
     }
     pre{
@@ -42,7 +40,7 @@ export const BashStyles = styled.section`
   }
 
   @media screen and (max-width: 400px) {
-    p, ol > li {
+    ol > li {
       font-size: 0.67rem;
     }
     pre {
