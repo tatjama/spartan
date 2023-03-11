@@ -11,6 +11,7 @@ const App =  () => {
       <Route path = "/search" element = {<SearchPage/>}/>
       <Route path = "/search/:id" element = {<SearchPage/>}/>
       <Route path ='*' element = {<NoMatch/>}/>
+      <Route path = "/bash_script" render = {() => (window.location ="./downloads/bash_script.txt")} />
     </Routes>  
   );
 }
