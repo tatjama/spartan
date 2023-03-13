@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 //components
 import { Button, SearchBar, Select, Movie, Searching, Pagination } from "../components";
 //utils
-import { typesList, yearsList} from "../utils/constants";
+import { TYPES_LIST, yearsList} from "../utils/constants";
 //styles
 import { SearchPageStyles } from "./SearchPageStyles.js";
 //hooks
@@ -61,7 +61,7 @@ const SearchPage = () => {
             <header>
                 <SearchBar setQuery = {setQuery} />
                 <div className="selectContainer">
-                    <Select optionsList = {typesList} setOption = {setType} name = "types"/>
+                    <Select optionsList = {TYPES_LIST} setOption = {setType} name = "types"/>
                     <Select optionsList = {yearsList()} setOption = {setYear} name = "years"/>
                 </div>
             </header>         

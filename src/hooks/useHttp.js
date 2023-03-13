@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { urlBase, key } from '../utils/constants';
+import { URL_BASE, KEY } from '../utils/constants';
 
 export const useHttp = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -9,8 +9,8 @@ export const useHttp = () => {
         setIsLoading(true);
         setError(null);
         const url = body.i ? 
-        `${urlBase}/?i=${body.i}&apikey=${key}` 
-        : `${urlBase}/?apikey=${key}&s=${body.query}&type=${body.type}&y=${body.year}&page=${body.page}`;
+        `${URL_BASE}/?i=${body.i}&apikey=${KEY}` 
+        : `${URL_BASE}/?apikey=${KEY}&s=${body.query}&type=${body.type}&y=${body.year}&page=${body.page}`;
         
         try {
             const response = await fetch(url, {

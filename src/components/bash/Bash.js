@@ -57,6 +57,7 @@ const Bash = () => {
         <a 
           className="hidden"
           target='_blank'
+          rel="noreferrer"
           download={FILE_NAMES[fileType]}
           href={downloadURL}
           ref={e=>doFileDownload.current = e}
