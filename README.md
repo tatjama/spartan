@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Tatjana Marković Spartan API 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
 
-## Available Scripts
+  - [Instruction](#instruction)
+  - [Overview](#overview)
+  - [Built with](#built-with)
+  - [Links](#links)
+  - [Screenshot](#screenshot)
+  - [Author](#author)
 
-In the project directory, you can run:
+## Instruction:
+1. Download project from - GitHub - [youtube-api](https://github.com/tatjama/spartan) 
+2. Install packages with 
+    npm install
+3. Create .env fille with Api key and API base_url (Register on OMDB Api and get API key)
 
-### `npm start`
+### Frontend React
+1. run server in development mode with
+    npm start
+2. find it on
+    http://localhost:3000
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Cypress
+1. open second terminal and start e2e tests with
+    npx cypress open
+2. choose e2e testing
+3. start e2e testing in Chrome
+4. in SPECS choose e2e test
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Overview
 
-### `npm test`
+1. Bash / Git
+    a. You can download bash script as .txt, .sh or .json file. 
+    b. You need to save that file in the folder where you want to start script with .sh extension
+    c. WINDOWS 
+        1.Open cmd in that folder
+        2. find file with
+            dir
+        3. start script with
+            git_bash.sh + ENTER
+        4. check result with
+            dir
+        5. check echo with
+            new_file.txt
+    d. LINUX / BASH
+        1. Open bash in that folder
+        2. find file with
+            ls
+        3. start script with
+            sh git_bash.sh + ENTER
+        4. check result with
+            ls
+        5. open file
+            nano new_file.txt
+        
+2. React
+    OMDb Api is a web application that will allow the user to search for any video.
+    The results will be displayed when the user writes to the search input or changes type (live search) or year. 
+    In the list of results, you can click on the one result that opens the details of the result when clicked.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. JavaScript
+    Result is shown on the Home page
+## Build with 
+    1. React.js
+    2. StyledComponents
+    3. ReactRouterDom
+    4. ReactLoaderSpinner
 
-### `npm run build`
+## Links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- GitHub - [spartan-api](https://github.com/tatjama/spartan)
+- Live - [spartan-api]()
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Screenshot
+![Full screen](./public/screenshots/full.PNG);
+![Full screen modal](./public/screenshots/fullModal.PNG)
+![Full screen Error](./public/screenshots/fullError.PNG)
+![Full screen 404](./public/screenshots/noFound.PNG)
+![Tablet](./public/screenshots/tablet.png)
+![Mobile](./public/screenshots/mobile.png)
+![Mobile Modal](./public/screenshots/mobileModal.png)
+![Mobile Error](./public/screenshots/mobileError.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Author
+- Website - [Tatjana Markovic](https://my-react-portfolio-tatjana.vercel.app/)
+- LinkedIn - [Tatjana Marković](https://www.linkedin.com/in/tatjana-markovi%C4%87-919501189/)
+- GitHub - [tatjama](https://github.com/tatjama)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
