@@ -1,11 +1,11 @@
 //utils
 import { createListOfPages, createListOfPagesHuge } from '../../utils/helper';
+import { MOVIES_PER_PAGE } from '../../utils/constants';
 //styles
 import { PaginationStyles } from './PaginationStyles';
-
 const Pagination = ({ movies, handlePageClick, nextPage }) => {
 
-    const p = movies?.Search?.length >0 ? Math.ceil(movies.totalResults / movies.Search.length): 1
+    const p = movies?.Search?.length >0 ? Math.ceil(movies.totalResults / MOVIES_PER_PAGE): 1
     
     return(
         p < 2
